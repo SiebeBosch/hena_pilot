@@ -1,0 +1,6 @@
+# Generated with D-HyDAMO in delftd3fmpy v.1.1.2 on 2021-02-23 23:34:30.
+# Tested and compatible with D-Flow FM 1.2.105.67228M, DIMRset 2.13.02.67836 and D-HYDRO suite 1D2D (Beta) 0.9.6.51435.
+# 
+[General]
+fileVersion = 1.01
+fileType = boundConds

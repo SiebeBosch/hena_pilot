@@ -10,3 +10,14 @@ hydamo_shp/*
 modelbouw.py
 hydamo_model/*
 .ipynb_checkpoints/steenbergerloop-checkpoint.ipynb
+boezemmodel/fm/boezemmodel.mdu
+boezemmodel/fm/boezemmodel_net.nc
+boezemmodel/fm/boezemmodel_new.ext
+boezemmodel/fm/boundaries.bc
+boezemmodel/fm/cross_section_definitions.ini
+boezemmodel/fm/cross_section_locations.ini
+boezemmodel/fm/dimr_config.xml
+boezemmodel/fm/initialconditions/initialFields.ini
+boezemmodel/fm/run.bat
+boezemmodel/fm/structure.ini
+boezemmodel/fm/structures.ldb
