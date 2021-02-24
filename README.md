@@ -1,7 +1,7 @@
 # TKI3: Pilot Hunze & Aa's
 Pilotproject van Waterschap Hunze &amp; Aa's binnen TKI3
 
-Welkom bij de pilot Hunze en Aa's, waarin we een boezemmodel bouwen voor het stroomgebied De Dellen.
+Welkom bij de pilot Hunze en Aa's, waarin we een D-Hydro-model bouwen voor het stroomgebied De Dellen.
 
 Volg deze stappen	:
 1. Download de broncode (groene button [Code]) van dit script en plaats die in een map op de eigen computer
