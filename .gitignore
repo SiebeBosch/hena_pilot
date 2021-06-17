@@ -9,4 +9,10 @@ dfm_model/*
 hydamo_shp/*
 hydamo_model/*
 boezemmodel/*
+<<<<<<< HEAD
+=======
+catchment_builder_output/*
+channel_builder_output/*
+>>>>>>> parent of 18d67a5 ('update')
 .ipynb_checkpoints/steenbergerloop-checkpoint.ipynb
+data/ahn3_5m_dtm.tif
