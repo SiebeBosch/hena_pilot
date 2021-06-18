@@ -1,7 +1,1303 @@
-# Generated with D-HyDAMO in delftd3fmpy v.1.1.2 on 2021-06-08 17:06:57.
+# Generated with D-HyDAMO in delftd3fmpy v.1.1.2 on 2021-06-18 13:18:57.
 # Tested and compatible with D-Flow FM 1.2.105.67228M, DIMRset 2.13.02.67836 and D-HYDRO suite 1D2D (Beta) 0.9.6.51435.
 # 
 [General]
 fileVersion = 2.01
 fileType = extForce
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17800
+	name = ucONGEDRAINEERDKLEIGPG-O-17800
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00956
+	chainage = 0.1
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17800
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17800
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00956
+	chainage = 3.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17800
+	name = ucGRASLANDKLEIGPG-O-17800
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00956
+	chainage = 4.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17800
+	name = pcGPG-O-17800
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00956
+	chainage = 8.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17670
+	name = ucGRASLANDZANDGPG-O-17670
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00899
+	chainage = 0.1
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17670
+	name = ucONGEDRAINEERDZANDGPG-O-17670
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00899
+	chainage = 4.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17670
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17670
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00899
+	chainage = 5.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17670
+	name = pcGPG-O-17670
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00899
+	chainage = 7.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-11860
+	name = ucONGEDRAINEERDKLEIGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 293.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-11860
+	name = ucGRASLANDKLEIGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 294.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-11860
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 297.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-11860
+	name = ucONGEDRAINEERDZANDGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 292.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-11860
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 299.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-11860
+	name = ucGRASLANDZANDGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 291.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-11860
+	name = ucGRASLANDVEENGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 290.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-11860
+	name = ucONGEDRAINEERDVEENGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 301.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-11860
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 289.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-11860
+	name = pcGPG-O-11860
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00780
+	chainage = 288.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17820
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17820
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00152
+	chainage = 312.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17820
+	name = ucONGEDRAINEERDKLEIGPG-O-17820
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00152
+	chainage = 315.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17820
+	name = ucGRASLANDKLEIGPG-O-17820
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00152
+	chainage = 311.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17820
+	name = ucGRASLANDZANDGPG-O-17820
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00152
+	chainage = 316.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17820
+	name = pcGPG-O-17820
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00152
+	chainage = 308.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17750
+	name = ucONGEDRAINEERDKLEIGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 143.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17750
+	name = ucGRASLANDKLEIGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 144.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17750
+	name = ucGRASLANDVEENGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 147.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17750
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 148.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17750
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 142.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-17750
+	name = ucONGEDRAINEERDVEENGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 149.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17750
+	name = ucONGEDRAINEERDZANDGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 140.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17750
+	name = ucGRASLANDZANDGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 139.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17750
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 152.0
+	discharge = REALTIME
+
+[Lateral]
+	id = gcGPG-O-17750
+	name = gcGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 153.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17750
+	name = pcGPG-O-17750
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00099
+	chainage = 137.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17660
+	name = ucGRASLANDZANDGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 285.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17660
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 284.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17660
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 280.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17660
+	name = ucGRASLANDVEENGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 277.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17660
+	name = ucONGEDRAINEERDZANDGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 273.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-17660
+	name = ucONGEDRAINEERDVEENGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 272.0
+	discharge = REALTIME
+
+[Lateral]
+	id = gcGPG-O-17660
+	name = gcGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 268.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17660
+	name = pcGPG-O-17660
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00062
+	chainage = 265.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17680
+	name = ucONGEDRAINEERDZANDGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 142.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17680
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 143.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17680
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 141.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17680
+	name = ucGRASLANDZANDGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 148.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17680
+	name = ucGRASLANDVEENGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 140.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-17680
+	name = ucONGEDRAINEERDVEENGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 149.0
+	discharge = REALTIME
+
+[Lateral]
+	id = gcGPG-O-17680
+	name = gcGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 150.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17680
+	name = pcGPG-O-17680
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00071
+	chainage = 138.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17780
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00121
+	chainage = 697.6409162677841
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17780
+	name = ucGRASLANDKLEIGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 3.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17780
+	name = ucONGEDRAINEERDKLEIGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 4.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17780
+	name = ucGRASLANDVEENGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 5.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17780
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 6.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-17780
+	name = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 8.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17780
+	name = ucGRASLANDZANDGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 12.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17780
+	name = ucONGEDRAINEERDZANDGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 14.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17780
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 15.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17780
+	name = pcGPG-O-17780
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00122
+	chainage = 17.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17700
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17700
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00090
+	chainage = 54.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17700
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17700
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00090
+	chainage = 55.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17700
+	name = ucGRASLANDVEENGPG-O-17700
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00090
+	chainage = 60.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17700
+	name = ucONGEDRAINEERDZANDGPG-O-17700
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00090
+	chainage = 52.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-17700
+	name = ucONGEDRAINEERDVEENGPG-O-17700
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00090
+	chainage = 61.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17700
+	name = pcGPG-O-17700
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00090
+	chainage = 62.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17760
+	name = ucGRASLANDKLEIGPG-O-17760
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00114
+	chainage = 293.297
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17760
+	name = ucGRASLANDVEENGPG-O-17760
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00114
+	chainage = 297.297
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17760
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17760
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00114
+	chainage = 298.297
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17760
+	name = ucONGEDRAINEERDKLEIGPG-O-17760
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00114
+	chainage = 299.297
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17760
+	name = pcGPG-O-17760
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00114
+	chainage = 301.297
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17710
+	name = ucGRASLANDVEENGPG-O-17710
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00088
+	chainage = 277.306
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17710
+	name = ucGRASLANDZANDGPG-O-17710
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00088
+	chainage = 276.306
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17710
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17710
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00088
+	chainage = 273.306
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17710
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17710
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00088
+	chainage = 269.306
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17710
+	name = ucONGEDRAINEERDZANDGPG-O-17710
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00088
+	chainage = 268.306
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-17710
+	name = ucONGEDRAINEERDVEENGPG-O-17710
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00088
+	chainage = 264.306
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17710
+	name = pcGPG-O-17710
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00088
+	chainage = 260.306
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17790
+	name = ucONGEDRAINEERDKLEIGPG-O-17790
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00131
+	chainage = 0.1
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17790
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17790
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00131
+	chainage = 7.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17790
+	name = ucGRASLANDKLEIGPG-O-17790
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00131
+	chainage = 8.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-17790
+	name = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-17790
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00131
+	chainage = 12.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17790
+	name = pcGPG-O-17790
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00131
+	chainage = 0.1
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17755
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17755
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00791
+	chainage = 100.698
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17755
+	name = ucGRASLANDKLEIGPG-O-17755
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00791
+	chainage = 96.698
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17755
+	name = ucONGEDRAINEERDKLEIGPG-O-17755
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00791
+	chainage = 101.698
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17755
+	name = ucGRASLANDZANDGPG-O-17755
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00791
+	chainage = 102.698
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17755
+	name = ucONGEDRAINEERDZANDGPG-O-17755
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00791
+	chainage = 94.698
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17755
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17755
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00791
+	chainage = 103.698
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17755
+	name = pcGPG-O-17755
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00791
+	chainage = 104.698
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17770
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17770
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00123
+	chainage = 314.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17770
+	name = ucGRASLANDKLEIGPG-O-17770
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00123
+	chainage = 315.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17770
+	name = ucONGEDRAINEERDKLEIGPG-O-17770
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00123
+	chainage = 318.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17770
+	name = pcGPG-O-17770
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00123
+	chainage = 320.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17810
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17810
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00147
+	chainage = 226.971
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17810
+	name = ucGRASLANDKLEIGPG-O-17810
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00147
+	chainage = 229.971
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17810
+	name = ucONGEDRAINEERDKLEIGPG-O-17810
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00147
+	chainage = 231.971
+	discharge = REALTIME
+
+[Lateral]
+	id = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-17810
+	name = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-17810
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00147
+	chainage = 232.971
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17810
+	name = pcGPG-O-17810
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00147
+	chainage = 234.971
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17740
+	name = ucGRASLANDKLEIGPG-O-17740
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00104
+	chainage = 251.405
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17740
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17740
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00104
+	chainage = 258.405
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17740
+	name = ucONGEDRAINEERDKLEIGPG-O-17740
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00104
+	chainage = 259.405
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17740
+	name = pcGPG-O-17740
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00104
+	chainage = 264.405
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17685
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 114.551
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17685
+	name = ucONGEDRAINEERDKLEIGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 117.551
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17685
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 113.551
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17685
+	name = ucGRASLANDZANDGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 118.551
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17685
+	name = ucGRASLANDKLEIGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 119.551
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17685
+	name = ucONGEDRAINEERDZANDGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 120.551
+	discharge = REALTIME
+
+[Lateral]
+	id = ucBOOM_EN_FRUITKWEKERIJZANDGPG-O-17685
+	name = ucBOOM_EN_FRUITKWEKERIJZANDGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 110.551
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17685
+	name = pcGPG-O-17685
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-01042
+	chainage = 109.551
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-11730
+	name = ucONGEDRAINEERDKLEIGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 1.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-11730
+	name = ucGRASLANDKLEIGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 2.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-11730
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 6.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-11730
+	name = ucGRASLANDVEENGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 0.1
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-11730
+	name = ucONGEDRAINEERDVEENGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 7.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-11730
+	name = ucGRASLANDZANDGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 8.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-11730
+	name = ucONGEDRAINEERDZANDGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 10.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-11730
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 11.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-11730
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 12.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-11730
+	name = ucBOOM_EN_FRUITKWEKERIJKLEIGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 15.0
+	discharge = REALTIME
+
+[Lateral]
+	id = gcGPG-O-11730
+	name = gcGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 16.0
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-11730
+	name = pcGPG-O-11730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00138
+	chainage = 17.0
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17730
+	name = ucGRASLANDKLEIGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 271.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17730
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17730
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17730
+	name = ucONGEDRAINEERDKLEIGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17730
+	name = ucGRASLANDVEENGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-17730
+	name = ucONGEDRAINEERDVEENGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17730
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17730
+	name = ucGRASLANDZANDGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17730
+	name = pcGPG-O-17730
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00101
+	chainage = 263.5
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDZANDGPG-O-17690
+	name = ucGRASLANDZANDGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 392.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDKLEIGPG-O-17690
+	name = ucONGEDRAINEERDKLEIGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 395.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDZANDGPG-O-17690
+	name = ucONGEDRAINEERDZANDGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 391.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDVEENGPG-O-17690
+	name = ucGRASLANDVEENGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 396.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucGRASLANDKLEIGPG-O-17690
+	name = ucGRASLANDKLEIGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 389.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWVEENGPG-O-17690
+	name = ucAKKERBOUW_TUINBOUWVEENGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 388.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWZANDGPG-O-17690
+	name = ucAKKERBOUW_TUINBOUWZANDGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 399.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17690
+	name = ucAKKERBOUW_TUINBOUWKLEIGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 387.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucONGEDRAINEERDVEENGPG-O-17690
+	name = ucONGEDRAINEERDVEENGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 400.192
+	discharge = REALTIME
+
+[Lateral]
+	id = ucBOOM_EN_FRUITKWEKERIJZANDGPG-O-17690
+	name = ucBOOM_EN_FRUITKWEKERIJZANDGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 386.192
+	discharge = REALTIME
+
+[Lateral]
+	id = gcGPG-O-17690
+	name = gcGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 385.192
+	discharge = REALTIME
+
+[Lateral]
+	id = pcGPG-O-17690
+	name = pcGPG-O-17690
+	type = discharge
+	locationType = 1d
+	branchId = OAF-O-00081
+	chainage = 402.192
+	discharge = REALTIME
 

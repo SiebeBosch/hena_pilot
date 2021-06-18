@@ -138,7 +138,7 @@ DtMax                             = 30.               # Maximal computation time
 DtInit                            = 60.                 # Initial computation timestep (s)
 Tunit                             = S                   # Time unit for start/stop times (D, H, M or S)
 TStart                            = 0.0                 # Start time w.r.t. RefDate (in TUnit)
-TStop                             = 518400.0            # Stop  time w.r.t. RefDate (in TUnit)
+TStop                             = 864000              # Stop  time w.r.t. RefDate (in TUnit)
 
 [restart]
 RestartFile                       =                     # Restart netcdf-file, either *_rst.nc or *_map.nc
@@ -149,16 +149,16 @@ ExtForceFile                      = # Old format for external forcings file *.ex
 ExtForceFileNew                   = dellen_new.ext# New format for external forcings file *.ext, link with bc-format boundary conditions specification
 
 [output]
-OutputDir                         =                     # Output directory of map-, his-, rst-, dat- and timings-files, default: DFM_OUTPUT_<modelname>. Set to . for current dir.
+OutputDir                         = output_initialisatie# Output directory of map-, his-, rst-, dat- and timings-files, default: DFM_OUTPUT_<modelname>. Set to . for current dir.
 FlowGeomFile                      =                     # Flow geometry NetCDF *_flowgeom.nc
 ObsFile                           =       # Points file *.xyn with observation stations with rows x, y, station name
 CrsFile                           =                     # Polyline file *_crs.pli defining observation cross sections
 FouFile                           =                     # Fourier analysis input file *.fou
 HisFile                           =                     # HisFile name *_his.nc
 MapFile                           =                     # MapFile name *_map.nc
-HisInterval                       = 120. 0. 0.          # History output times, given as "interval" "start period" "end period" (s)
+HisInterval                       = 600. 0. 0.          # History output times, given as "interval" "start period" "end period" (s)
 XLSInterval                       = 0.                  # Interval (s) between XLS history
-MapInterval                       = 3600. 0. 0.         # Map file output, given as "interval" "start period" "end period" (s)
+MapInterval                       = 600. 0. 0.          # Map file output, given as "interval" "start period" "end period" (s)
 RstInterval                       = 86400. 0. 0.        # Restart file output times, given as "interval" "start period" "end period" (s)
 WaqInterval                       = 0. 0. 0.            # DELWAQ output times, given as "interval" "start period" "end period" (s)
 StatsInterval                     = -60.                # Screen step output interval in seconds simulation time, if negative in seconds wall clock time
@@ -198,6 +198,6 @@ Wrihis_structure_compound         = 1                   # Write output for compo
 MapOutputTimeVector               =                     # File (*.mpt) containing fixed map output times (s) w.r.t. RefDate
 FullGridOutput                    = 0                   # Full grid output mode (0: compact, 1: full time-varying grid data)
 EulerVelocities                   = 0                   # Euler velocities output (0: GLM, 1: Euler velocities)
-Wrirst_bnd                        = 1                   # Write waterlevel, bedlevel and coordinates of boundaries to restart files
+Wrirst_bnd                        = 0                   # Write waterlevel, bedlevel and coordinates of boundaries to restart files
 Writepart_domain                  = 1                   # Write partition domain info. for postprocessing
 
