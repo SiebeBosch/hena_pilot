@@ -9,6 +9,7 @@ from delft3dfmpy import HyDAMO
 from delft3dfmpy.converters.hydamo_to_dflowfm import roughness_gml
 from delft3dfmpy.core.geometry import find_nearest_branch
 from pathlib import Path
+from math import isnan
 
 from shapely.geometry import LineString, Point
 from shapely.ops import snap
@@ -280,27 +281,57 @@ def get_trapeziums(gdf,
     return pd.DataFrame.from_dict(definitions, orient="index")
 
 
-def add_trapeziums(dfmmodel, principe_profielen_df, closed=False):
+def add_trapeziums(dfmmodel, principe_profielen_bov_df, principe_profielen_ben_df, closed=False):
     """Add trapezium profiles on branches with missing crosssections."""
+    #siebe 22-6-2021: nu twee dataframes: een voor bovenstrooms een voor benedenstoomse zijde tak
     xs = dfmmodel.crosssections
     for branch in xs.get_branches_without_crosssection():
-        prof_def = _valid_pprof(dict(principe_profielen_df.loc[branch]))
-        chainage = dfmmodel.network.branches.loc[branch]['geometry'].length / 2
-        definition = f"PPRO_{branch}"
-        xs.add_crosssection_location(branch,
-                                     chainage,
-                                     definition,
-                                     shift=prof_def["bottomlevel"]
-                                     )
+    
+        prof_def = _valid_pprof(dict(principe_profielen_bov_df.loc[branch]))
+        chainage = 0.1
+        definition = f"PPROUP_{branch}"        
+        #siebe 22 juni 2022
+        bottomlevel = prof_def["bottomlevel"]
+        if not isnan(bottomlevel):
+                    
+            xs.add_crosssection_location(branch,
+                                         chainage,
+                                         definition,
+                                         shift=prof_def["bottomlevel"]
+                                         )
 
-        xs.add_trapezium_definition(
-            name=definition,
-            slope=prof_def["slope"],
-            maximumflowwidth=prof_def["maximumflowwidth"],
-            bottomwidth=prof_def["bottomwidth"],
-            closed=closed,
-            roughnesstype=roughness_gml[int(prof_def["roughnesstype"])],
-            roughnessvalue=float(prof_def["roughnessvalue"]))
+            xs.add_trapezium_definition(
+                name=definition,
+                slope=prof_def["slope"],
+                maximumflowwidth=prof_def["maximumflowwidth"],
+                bottomwidth=prof_def["bottomwidth"],
+                closed=closed,
+                roughnesstype=roughness_gml[int(prof_def["roughnesstype"])],
+                roughnessvalue=float(prof_def["roughnessvalue"]))
+        
+        prof_def = _valid_pprof(dict(principe_profielen_ben_df.loc[branch]))
+        chainage = dfmmodel.network.branches.loc[branch]['geometry'].length - 0.1
+        definition = f"PPRODN_{branch}"        
+        #siebe 22 juni 2022
+        bottomlevel = prof_def["bottomlevel"]
+        if not isnan(bottomlevel):
+                    
+            xs.add_crosssection_location(branch,
+                                         chainage,
+                                         definition,
+                                         shift=prof_def["bottomlevel"]
+                                         )
+
+            xs.add_trapezium_definition(
+                name=definition,
+                slope=prof_def["slope"],
+                maximumflowwidth=prof_def["maximumflowwidth"],
+                bottomwidth=prof_def["bottomwidth"],
+                closed=closed,
+                roughnesstype=roughness_gml[int(prof_def["roughnesstype"])],
+                roughnessvalue=float(prof_def["roughnessvalue"]))
+        
+        
 
     return dfmmodel
 
