@@ -587,40 +587,41 @@ crs_def_id = 0 # start uniek ID dwarsdoorsnede definitie
 for branch_id in dfmmodel.crosssections.get_branches_without_crosssection(): 
     
     # als de branch in de culvert branch lijst staat (branch heeft culvert)
-    if branch_id in hydamo.culverts.branch_id.to_list(): # als de branch
+    if branch_id in hydamo.culverts.branch_id.to_list(): 
 
         culvert_idx = hydamo.culverts.branch_id.to_list().index(branch_id) # index location van de duiker (niet nodig?)
+        culvert = hydamo.culverts.iloc[[culvert_idx]]
         
         # lengtes van duiker en watergang
-        culvert_length = hydamo.culverts.iloc[[culvert_idx]]['lengte'][0]
+        culvert_length = culvert['lengte'][0]
         branch_length = dfmmodel.network.branches.geometry[branch_id].length
         
         if culvert_length > 0.5 * branch_length: # check of de duiker meer dan 50% van de watergang beslaat
         
             # get culvert attributes
-            culvert_diameter = hydamo.culverts.iloc[[culvert_idx]]['hoogteopening'][0]
-            roughnesstype = int(hydamo.culverts.iloc[[culvert_idx]]['ruwheidstypecode'][0])
-            roughness = hydamo.culverts.iloc[[culvert_idx]]['ruwheidswaarde'][0]
-            bob_boven = round(hydamo.culverts.iloc[[culvert_idx]]['hoogtebinnenonderkantbovenstrooms'][0],3)
-            bob_beneden = round(hydamo.culverts.iloc[[culvert_idx]]['hoogtebinnenonderkantbenedenstrooms'][0],3)
+            culvert_diameter = culvert['hoogteopening'][0]
+            roughnesstype = int(culvert['ruwheidstypecode'][0])
+            roughness = culvert['ruwheidswaarde'][0]
+            bob_boven = round(culvert['hoogtebinnenonderkantbovenstrooms'][0],3)
+            bob_beneden = round(culvert['hoogtebinnenonderkantbenedenstrooms'][0],3)
 
             # maak unieke namen voor dwarsdoorsnede profiel definities
-            crs_def_boven_name = f'rect_{str(crs_def_id+1)}'
-            crs_def_beneden_name = f'rect_{str(crs_def_id)}'
+            crs_def_boven_name = f'rect_{crs_def_id}'
+            crs_def_beneden_name = f'rect_{crs_def_id+1}'
             crs_def_id += 2
 
             # Voeg vierkante profiel definities toe
             dfmmodel.crosssections.add_rectangle_definition(name= crs_def_boven_name, 
                                                          height = culvert_diameter, 
                                                          width = culvert_diameter, 
-                                                         closed = 1,
+                                                         closed = False,
                                                          roughnesstype = roughnesstype, 
                                                          roughnessvalue = roughness)
             
             dfmmodel.crosssections.add_rectangle_definition(name= crs_def_beneden_name, 
                                                          height = culvert_diameter, 
                                                          width = culvert_diameter, 
-                                                         closed = 1,
+                                                         closed = False,
                                                          roughnesstype = roughnesstype, 
                                                          roughnessvalue = roughness)
 
@@ -636,7 +637,7 @@ for branch_id in dfmmodel.crosssections.get_branches_without_crosssection():
                                                              definition = crs_def_beneden_name, 
                                                              shift = bob_beneden)
 
-            print(f'added crs for branch {branch_id} based on culvert {hydamo.culverts.iloc[[culvert_idx]]["code"][0]}')
+            print(f'added crs for branch {branch_id} based on culvert {culvert["code"][0]}')
 
 print(f"{len(dfmmodel.crosssections.get_branches_without_crosssection())} number of branches remain with no cross section due to missing data.")
 print('Still missing:', '\n'.join(dfmmodel.crosssections.get_branches_without_crosssection()))
