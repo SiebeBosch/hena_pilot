@@ -570,7 +570,8 @@ print(f"{len(dfmmodel.crosssections.get_structures_without_crosssection())} stru
 if len(dfmmodel.crosssections.get_branches_without_crosssection()) > 0:        
     print("adding trapezium profiles on branches with missing crosssections.")
     #siebe 22-6-2022: onderscheid boven- en benedenstrooms profiel. Vanaf nu twee dataframes meegeven
-    dfmmodel = hydrotools.add_trapeziums(dfmmodel, principe_profielen_bov_df, principe_profielen_ben_df)
+    # Bram 4-7-2021 maximum Flowwidth wordt 300 in output met closed=False!? -> closed=True
+    dfmmodel = hydrotools.add_trapeziums(dfmmodel, principe_profielen_bov_df, principe_profielen_ben_df, False)
 
 print(f"{len(dfmmodel.crosssections.get_branches_without_crosssection())} number of branches remain with no cross section due to missing data.")
 
