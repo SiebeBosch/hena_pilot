@@ -305,7 +305,7 @@ def add_trapeziums(dfmmodel, principe_profielen_bov_df, principe_profielen_ben_d
                 slope=prof_def["slope"],
                 maximumflowwidth=prof_def["maximumflowwidth"],
                 bottomwidth=prof_def["bottomwidth"],
-                closed=True,
+                closed=closed,
                 roughnesstype=roughness_gml[int(prof_def["roughnesstype"])],
                 roughnessvalue=float(prof_def["roughnessvalue"]))
         
@@ -326,7 +326,7 @@ def add_trapeziums(dfmmodel, principe_profielen_bov_df, principe_profielen_ben_d
                 slope=prof_def["slope"],
                 maximumflowwidth=prof_def["maximumflowwidth"],
                 bottomwidth=prof_def["bottomwidth"],
-                closed=True,
+                closed=closed,
                 roughnesstype=roughness_gml[int(prof_def["roughnesstype"])],
                 roughnessvalue=float(prof_def["roughnessvalue"]))
         
