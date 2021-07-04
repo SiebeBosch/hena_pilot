@@ -636,7 +636,7 @@ for branch_id in dfmmodel.crosssections.get_branches_without_crosssection():
                                                              definition = crs_def_beneden_name, 
                                                              shift = bob_beneden)
 
-            print(f'added crs for branch {branch_id} based on culvert {hydamo.culverts.iloc[[idx]]["code"][0]}')
+            print(f'added crs for branch {branch_id} based on culvert {hydamo.culverts.iloc[[culvert_idx]]["code"][0]}')
 
 print(f"{len(dfmmodel.crosssections.get_branches_without_crosssection())} number of branches remain with no cross section due to missing data.")
 print('Still missing:', '\n'.join(dfmmodel.crosssections.get_branches_without_crosssection()))
