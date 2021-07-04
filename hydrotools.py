@@ -296,16 +296,16 @@ def add_trapeziums(dfmmodel, principe_profielen_bov_df, principe_profielen_ben_d
                     
             xs.add_crosssection_location(branch,
                                          chainage,
-                                         definition,
+                                         definition+'_up',
                                          shift=prof_def["bottomlevel"]
                                          )
 
             xs.add_trapezium_definition(
-                name=definition,
+                name=definition+'_up',
                 slope=prof_def["slope"],
                 maximumflowwidth=prof_def["maximumflowwidth"],
                 bottomwidth=prof_def["bottomwidth"],
-                closed=closed,
+                closed=True,
                 roughnesstype=roughness_gml[int(prof_def["roughnesstype"])],
                 roughnessvalue=float(prof_def["roughnessvalue"]))
         
@@ -318,16 +318,15 @@ def add_trapeziums(dfmmodel, principe_profielen_bov_df, principe_profielen_ben_d
                     
             xs.add_crosssection_location(branch,
                                          chainage,
-                                         definition,
+                                         definition+'_down',
                                          shift=prof_def["bottomlevel"]
                                          )
-
             xs.add_trapezium_definition(
-                name=definition,
+                name=definition+'_down',
                 slope=prof_def["slope"],
                 maximumflowwidth=prof_def["maximumflowwidth"],
                 bottomwidth=prof_def["bottomwidth"],
-                closed=closed,
+                closed=True,
                 roughnesstype=roughness_gml[int(prof_def["roughnesstype"])],
                 roughnessvalue=float(prof_def["roughnessvalue"]))
         
