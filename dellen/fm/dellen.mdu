@@ -149,7 +149,7 @@ ExtForceFile                      = # Old format for external forcings file *.ex
 ExtForceFileNew                   = dellen_new.ext# New format for external forcings file *.ext, link with bc-format boundary conditions specification
 
 [output]
-OutputDir                         = output_initialisatie# Output directory of map-, his-, rst-, dat- and timings-files, default: DFM_OUTPUT_<modelname>. Set to . for current dir.
+OutputDir                         = output              # Output directory of map-, his-, rst-, dat- and timings-files, default: DFM_OUTPUT_<modelname>. Set to . for current dir.
 FlowGeomFile                      =                     # Flow geometry NetCDF *_flowgeom.nc
 ObsFile                           =       # Points file *.xyn with observation stations with rows x, y, station name
 CrsFile                           =                     # Polyline file *_crs.pli defining observation cross sections
