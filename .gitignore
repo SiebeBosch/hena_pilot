@@ -5,6 +5,7 @@ dhydamo.log
 beheerregister/*
 beheerregister_adjusted/*
 dfm_model/*
+dellen/*
 
 !.gitignore
 hydamo_shp/*
