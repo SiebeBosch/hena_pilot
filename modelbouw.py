@@ -90,6 +90,8 @@ print("Paden succesvol ingesteld.")
 
 # In[8]:
 
+import sys
+sys.path.append(r'd:\GITHUB\DELFT3DFMPY_SB')
 
 from delft3dfmpy import DFlowFMModel, HyDAMO, Rectangular, DFlowFMWriter
 from delft3dfmpy import DFlowRRModel, DFlowRRWriter
