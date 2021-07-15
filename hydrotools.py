@@ -5,6 +5,7 @@ Created on Mon Sep 21 23:18:13 2020
 
 import geopandas as gpd
 import pandas as pd
+import numpy as np
 from delft3dfmpy import HyDAMO
 from delft3dfmpy.converters.hydamo_to_dflowfm import roughness_gml
 from delft3dfmpy.core.geometry import find_nearest_branch
@@ -390,3 +391,30 @@ def move_end_nodes(branches_gdf, move_lines_gdf, threshold):
     branches_gdf.drop(["start_node", "end_node", "start_end_dist"], axis=1, inplace=True)
     
     return branches_gdf
+    
+def _is_summer(datetime, summer_to_winter, winter_to_summer):
+
+    if winter_to_summer.month < datetime.month < summer_to_winter.month:
+        is_summer = True
+    elif (datetime.month == winter_to_summer.month) and (datetime.day > winter_to_summer.day):
+        is_summer = True
+    elif (datetime.month == summer_to_winter.month) and (datetime.day < winter_to_summer.day):
+        is_summer = True
+    else:
+        is_summer = False
+
+    return is_summer
+    
+def generate_target_series(target_summer,
+                           target_winter,
+                           summer_to_winter=pd.Timestamp(year=1900, month=9, day=15),
+                           winter_to_summer=pd.Timestamp(year=1900, month=3, day=15),
+                           start_datetime=pd.Timestamp(year=1900, month=1, day=1),
+                           end_datetime=pd.Timestamp(year=2100, month=1, day=1),
+                           timedelta=pd.Timedelta(weeks=4)):
+    timestamps = int(((end_datetime - start_datetime)/ timedelta) + 2.5)
+    index = [start_datetime + timedelta * i for i in range(0,int(timestamps))]
+    values = np.full(len(index), target_winter)
+    summer_idx = [_is_summer(datetime, summer_to_winter, winter_to_summer) for datetime in index]
+    values[summer_idx] = target_summer
+    return pd.Series(values, index=index)
