@@ -6,6 +6,7 @@ beheerregister/*
 beheerregister_adjusted/*
 dfm_model/*
 dellen/*
+data/*
 
 !.gitignore
 hydamo_shp/*
