@@ -1,49 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <dimrConfig xmlns="http://schemas.deltares.nl/dimr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.deltares.nl/dimr http://content.oss.deltares.nl/schemas/dimr-1.2.xsd">
-	<documentation>
-		<fileVersion>1.2</fileVersion>
-		<createdBy>D-HyDAMO in delft3dfmpy v.1.1.3</createdBy>
-		<creationDate>2021-08-19 13:44:15</creationDate>
-	</documentation>
-
-	<control>
-		<parallel>
-			<startGroup>
-				<time>0 300 518400</time>
-				<coupler name="flow2rr" />
-				<start name="CoupledTest1_RR" />
-				<coupler name="rr2flow" />
-			</startGroup>
-			<start name="CoupledTest1_DFM" />
-		</parallel>
-	</control>
-
-	<component name="CoupledTest1_DFM">
-		<library>dflowfm</library>
-		<workingDir>fm</workingDir>
-		<inputFile>dellen.mdu</inputFile>
-	</component>
-	<component name="CoupledTest1_RR">
-		<library>rr_dll</library>
-		<workingDir>rr</workingDir>
-		<inputFile>Sobek_3b.fnm</inputFile>
-	</component>
-
-	<coupler name="flow2rr">
-		<sourceComponent>CoupledTest1_DFM</sourceComponent>
-		<targetComponent>CoupledTest1_RR</targetComponent>
-		<logger>
-			<workingDir>.</workingDir>
-			<outputFile>dflowfm_to_rr.nc</outputFile>
-		</logger>
-	</coupler>
-
-	<coupler name="rr2flow">
-		<sourceComponent>CoupledTest1_RR</sourceComponent>
-		<targetComponent>CoupledTest1_DFM</targetComponent>
-		<logger>
-			<workingDir>.</workingDir>
-			<outputFile>rr_to_dflowfm.nc</outputFile>
-		</logger>
-	</coupler>
+  <documentation>
+    <fileVersion>1.0</fileVersion>
+    <createdBy>Deltares, Coupling Team</createdBy>
+    <creationDate>2020-07-01T14:33:36.9140346Z</creationDate>
+  </documentation>
+  
+  <control>
+    <parallel>
+      <startGroup>
+        <time>0 600 864000</time>
+        <coupler name="flowfm_to_rtc" />
+        <start name="Real-Time Control" />
+        <coupler name="rtc_to_flowfm" />
+      </startGroup>
+      <start name="Flow1D" />
+    </parallel>
+  </control>
+  <component name="Real-Time Control">
+    <library>FBCTools_BMI</library>
+    <workingDir>rtc</workingDir>
+    <inputFile>.</inputFile>
+  </component>
+  <component name="Flow1D">
+    <library>dflowfm</library>
+    <workingDir>dflowfm</workingDir>
+    <inputFile>dellen.mdu</inputFile>
+  </component>
+  <coupler name="rtc_to_flowfm">
+    <sourceComponent>Real-Time Control</sourceComponent>
+    <targetComponent>Flow1D</targetComponent>
+  <item>
+      <sourceName>[Output]KST-O-17700/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17700/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17800/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17800/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17680/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17680/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17690/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17690/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17750/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17750/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17760/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17760/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17710/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17710/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17740/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17740/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17660/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17660/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17670/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17670/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17770/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17770/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17780/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17780/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17820/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17820/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17790/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17790/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17810/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17810/CrestLevel</targetName>
+  </item>
+  <logger>
+      <workingDir>.</workingDir>
+      <outputFile>rtc_to_flowfm.nc</outputFile>
+  </logger>
+  </coupler>
 </dimrConfig>
