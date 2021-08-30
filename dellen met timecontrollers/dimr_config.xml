@@ -31,18 +31,6 @@
     <sourceComponent>Real-Time Control</sourceComponent>
     <targetComponent>Flow1D</targetComponent>
   <item>
-      <sourceName>[Output]KST-O-17750/Crest level (s)</sourceName>
-      <targetName>weirs/KST-O-17750/CrestLevel</targetName>
-  </item>
-  <item>
-      <sourceName>[Output]KST-O-17680/Crest level (s)</sourceName>
-      <targetName>weirs/KST-O-17680/CrestLevel</targetName>
-  </item>
-  <item>
-      <sourceName>[Output]KST-O-17660/Crest level (s)</sourceName>
-      <targetName>weirs/KST-O-17660/CrestLevel</targetName>
-  </item>
-  <item>
       <sourceName>[Output]KST-O-17700/Crest level (s)</sourceName>
       <targetName>weirs/KST-O-17700/CrestLevel</targetName>
   </item>
@@ -51,8 +39,16 @@
       <targetName>weirs/KST-O-17800/CrestLevel</targetName>
   </item>
   <item>
+      <sourceName>[Output]KST-O-17680/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17680/CrestLevel</targetName>
+  </item>
+  <item>
       <sourceName>[Output]KST-O-17690/Crest level (s)</sourceName>
       <targetName>weirs/KST-O-17690/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17750/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17750/CrestLevel</targetName>
   </item>
   <item>
       <sourceName>[Output]KST-O-17760/Crest level (s)</sourceName>
@@ -65,6 +61,10 @@
   <item>
       <sourceName>[Output]KST-O-17740/Crest level (s)</sourceName>
       <targetName>weirs/KST-O-17740/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17660/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17660/CrestLevel</targetName>
   </item>
   <item>
       <sourceName>[Output]KST-O-17670/Crest level (s)</sourceName>
@@ -93,26 +93,6 @@
   <logger>
       <workingDir>.</workingDir>
       <outputFile>rtc_to_flowfm.nc</outputFile>
-  </logger>
-  </coupler>
-  <coupler name="flowfm_to_rtc">
-    <sourceComponent>Flow1D</sourceComponent>
-    <targetComponent>Real-Time Control</targetComponent>
-  <item>
-      <sourceName>observations/ObservationPoint_KST-O-17750/water_level</sourceName>
-      <targetName>[Input]ObservationPoint_KST-O-17750/Water level (op)</targetName>
-  </item>
-  <item>
-      <sourceName>observations/ObservationPoint_KST-O-17680/water_level</sourceName>
-      <targetName>[Input]ObservationPoint_KST-O-17680/Water level (op)</targetName>
-  </item>
-  <item>
-      <sourceName>observations/ObservationPoint_KST-O-17660/water_level</sourceName>
-      <targetName>[Input]ObservationPoint_KST-O-17660/Water level (op)</targetName>
-  </item>
-  <logger>
-      <workingDir>.</workingDir>
-      <outputFile>flowfm_to_rtc.nc</outputFile>
   </logger>
   </coupler>
 </dimrConfig>

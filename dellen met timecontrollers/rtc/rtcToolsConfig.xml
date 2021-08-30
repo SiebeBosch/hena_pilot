@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rtcToolsConfig xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews C:\Users\chavarri\OneDrive%20-%20Stichting%20Deltares\all\projects\200701_rtc_lecture\runs\r003\dimr\rtc\rtcToolsConfig.xsd">
+  <general>
+    <description>RTC Model DeltaShell</description>
+    <poolRoutingScheme>Theta</poolRoutingScheme>
+    <theta>0.5</theta>
+  </general>
+  <rules>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17700/Time Rule">
+        <input>
+          <x>Control Group KST-O-17700/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17700/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17800/Time Rule">
+        <input>
+          <x>Control Group KST-O-17800/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17800/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17680/Time Rule">
+        <input>
+          <x>Control Group KST-O-17680/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17680/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17690/Time Rule">
+        <input>
+          <x>Control Group KST-O-17690/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17690/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17750/Time Rule">
+        <input>
+          <x>Control Group KST-O-17750/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17750/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17760/Time Rule">
+        <input>
+          <x>Control Group KST-O-17760/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17760/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17710/Time Rule">
+        <input>
+          <x>Control Group KST-O-17710/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17710/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17740/Time Rule">
+        <input>
+          <x>Control Group KST-O-17740/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17740/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17660/Time Rule">
+        <input>
+          <x>Control Group KST-O-17660/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17660/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17670/Time Rule">
+        <input>
+          <x>Control Group KST-O-17670/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17670/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17770/Time Rule">
+        <input>
+          <x>Control Group KST-O-17770/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17770/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17780/Time Rule">
+        <input>
+          <x>Control Group KST-O-17780/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17780/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17820/Time Rule">
+        <input>
+          <x>Control Group KST-O-17820/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17820/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17790/Time Rule">
+        <input>
+          <x>Control Group KST-O-17790/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17790/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+    <rule>
+      <timeAbsolute id="[TimeRule]Control Group KST-O-17810/Time Rule">
+        <input>
+          <x>Control Group KST-O-17810/Time Rule</x>
+        </input>
+        <output>
+          <y>[Output]KST-O-17810/Crest level (s)</y>
+        </output>
+        </timeAbsolute>
+    </rule>
+  </rules>
+</rtcToolsConfig>
