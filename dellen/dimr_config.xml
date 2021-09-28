@@ -31,6 +31,14 @@
     <sourceComponent>Real-Time Control</sourceComponent>
     <targetComponent>Flow1D</targetComponent>
   <item>
+      <sourceName>[Output]PMP_KGM-O-11730/Capacity (p)</sourceName>
+      <targetName>pumps/PMP_KGM-O-11730/capacity</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]PMP_KGM-O-11860/Capacity (p)</sourceName>
+      <targetName>pumps/PMP_KGM-O-11860/capacity</targetName>
+  </item>
+  <item>
       <sourceName>[Output]KST-O-17750/Crest level (s)</sourceName>
       <targetName>weirs/KST-O-17750/CrestLevel</targetName>
   </item>
@@ -98,6 +106,14 @@
   <coupler name="flowfm_to_rtc">
     <sourceComponent>Flow1D</sourceComponent>
     <targetComponent>Real-Time Control</targetComponent>
+  <item>
+      <sourceName>observations/ObservationPoint_PMP_KGM-O-11730/water_level</sourceName>
+      <targetName>[Input]ObservationPoint_PMP_KGM-O-11730/Water level (op)</targetName>
+  </item>
+  <item>
+      <sourceName>observations/ObservationPoint_PMP_KGM-O-11860/water_level</sourceName>
+      <targetName>[Input]ObservationPoint_PMP_KGM-O-11860/Water level (op)</targetName>
+  </item>
   <item>
       <sourceName>observations/ObservationPoint_KST-O-17750/water_level</sourceName>
       <targetName>[Input]ObservationPoint_KST-O-17750/Water level (op)</targetName>

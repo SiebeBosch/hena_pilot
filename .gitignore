@@ -10,6 +10,7 @@ dfm_model/*
 dellen/*
 data/*
 dellen met timecontrollers/*
+dellen 20210913/*
 
 !.gitignore
 hydamo_shp/*
