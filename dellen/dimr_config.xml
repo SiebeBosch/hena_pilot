@@ -9,7 +9,7 @@
   <control>
     <parallel>
       <startGroup>
-        <time>0 600 864000</time>
+        <time>0 600 1728000</time>
         <coupler name="flowfm_to_rtc" />
         <start name="Real-Time Control" />
         <coupler name="rtc_to_flowfm" />
@@ -39,12 +39,12 @@
       <targetName>pumps/PMP_KGM-O-11860/capacity</targetName>
   </item>
   <item>
-      <sourceName>[Output]KST-O-17750/Crest level (s)</sourceName>
-      <targetName>weirs/KST-O-17750/CrestLevel</targetName>
-  </item>
-  <item>
       <sourceName>[Output]KST-O-17680/Crest level (s)</sourceName>
       <targetName>weirs/KST-O-17680/CrestLevel</targetName>
+  </item>
+  <item>
+      <sourceName>[Output]KST-O-17750/Crest level (s)</sourceName>
+      <targetName>weirs/KST-O-17750/CrestLevel</targetName>
   </item>
   <item>
       <sourceName>[Output]KST-O-17660/Crest level (s)</sourceName>
@@ -115,12 +115,12 @@
       <targetName>[Input]ObservationPoint_PMP_KGM-O-11860/Water level (op)</targetName>
   </item>
   <item>
-      <sourceName>observations/ObservationPoint_KST-O-17750/water_level</sourceName>
-      <targetName>[Input]ObservationPoint_KST-O-17750/Water level (op)</targetName>
-  </item>
-  <item>
       <sourceName>observations/ObservationPoint_KST-O-17680/water_level</sourceName>
       <targetName>[Input]ObservationPoint_KST-O-17680/Water level (op)</targetName>
+  </item>
+  <item>
+      <sourceName>observations/ObservationPoint_KST-O-17750/water_level</sourceName>
+      <targetName>[Input]ObservationPoint_KST-O-17750/Water level (op)</targetName>
   </item>
   <item>
       <sourceName>observations/ObservationPoint_KST-O-17660/water_level</sourceName>
