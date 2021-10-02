@@ -35,7 +35,7 @@ Let op: ten behoeve van dit project heb ik enkele zaken in Delft3dfmpy aangepast
 Terug naar de gewone public package van delft3dfmpy?
 1. Verwijder de prefix van je lokale fork: 
 ```
-conda -remove --all --prefix "d:\GITHUB\DELFT3DFMPY_SB\"
+conda remove --all --prefix "d:\GITHUB\DELFT3DFMPY_SB\"
 ```
 1.  Installeer de reguliere delft3dfmpy weer met conda install
 
