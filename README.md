@@ -5,7 +5,7 @@ Welkom bij de pilot Hunze en Aa's, waarin we een D-Hydro-model bouwen voor het s
 
 Volg deze stappen	:
 1. Download de broncode (groene button [Code]) van dit script en plaats die in een map op de eigen computer
-1. Zorg voor een D-HyDAMO-omgeving: https://github.com/openearth/delft3dfmpy#installation
+1. Zorg voor een D-HyDAMO-omgeving: https://github.com/openearth/delft3dfmpy#installation (conda env create -f environment.yml)
 1. Activeer de delft3dfmpy omgeving via de Anaconda Prompt (niet te verwarren met de reguliere command-prompt van Windows!):
 ```
 conda activate delft3dfmpy
