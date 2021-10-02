@@ -25,9 +25,9 @@ jupyter notebook
 6. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en voer alle code in het notebook uit
 
 
-## Delft3dfmpy debuggen:
+### Delft3dfmpy debuggen:
 
-1. Creëer een fork van delft3dfmpy en synchroniseer die met je harde schijf
+1. Creëer een fork van delft3dfmpy en synchroniseer deze met je harde schijf
 1. Creëer een werkende delft3dfmpy-omgeving en de-installeer delft3dfmpy (conda deactivate delft3dfmpy)
 1. verwijs in het jupyter notebook naar de locatie van delft3dfmpy Zie daarin onderstaand onder Controle Bestanden de regel sys.path.append(r'....\DELFT3DFMPY_SB')
 
