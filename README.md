@@ -22,7 +22,7 @@ python -m pip install delft3dfmpy
 ```
 jupyter notebook
 ```
-6. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en volg de notebook
+6. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en voer alle code in het notebook uit
 
 
 ## Delft3dfmpy debuggen:
