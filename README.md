@@ -14,11 +14,15 @@ conda env create -f environment.yml
 ```
 conda activate delft3dfmpy
 ```
-3. Open Jupyter Notebook via command-prompt in de geactiveerder omgeving:
+4. Installeer delft3dfmpy in deze omgeving
+```
+python -m pip install delft3dfmpy
+```
+5. Open Jupyter Notebook via command-prompt in de geactiveerder omgeving:
 ```
 jupyter notebook
 ```
-4. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en volg de notebook
+6. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en volg de notebook
 
 
 ## Delft3dfmpy debuggen:
