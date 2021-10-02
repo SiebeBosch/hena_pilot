@@ -20,7 +20,7 @@ jupyter notebook
 ## Delft3dfmpy debuggen:
 
 1. Creëer een fork van delft3dfmpy en synchroniseer die met je harde schijf
-1. Creëer een werkende delft3dfmpy-omgeving en de-installeer delft3dfmpy
+1. Creëer een werkende delft3dfmpy-omgeving en de-installeer delft3dfmpy (conda deactivate delft3dfmpy)
 1. verwijs in het jupyter notebook naar de locatie van delft3dfmpy Zie daarin onderstaand onder Controle Bestanden de regel sys.path.append(r'....\DELFT3DFMPY_SB')
 
 Let op: ten behoeve van dit project heb ik enkele zaken in Delft3dfmpy aangepast die nog niet gecommit zijn:
