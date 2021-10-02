@@ -39,4 +39,8 @@ conda remove --all --prefix "d:\GITHUB\DELFT3DFMPY_SB\"
 ```
 1.  Installeer de reguliere delft3dfmpy weer met conda install
 
+```
+conda env create -f environment.yml
+conda activate delft3dfmpy
+```
 
