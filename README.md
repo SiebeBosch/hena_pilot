@@ -31,3 +31,12 @@ Let op: ten behoeve van dit project heb ik enkele zaken in Delft3dfmpy aangepast
 1. Parameter bedlevel voor bruggen is vervangen door shift. Dit zat nog niet in delft3dfmpy verwerkt
 2. Wegschrijven structure.ini: versienummer opgehoogd van 2.0 naar 3.0 (opmerking Geert Prinsen aangaande het niet draaien via de DIMR onder D-Hydro 1.10) 
   Daarom is het voor nu raadzaam om met een lokale versie van delft3dfmpy te werken
+  
+Terug naar de gewone public package van delft3dfmpy?
+1. Verwijder de prefix van je lokale fork: 
+```
+conda -remove --all --prefix "d:\GITHUB\DELFT3DFMPY_SB\"
+```
+1.  Installeer de reguliere delft3dfmpy weer met conda install
+
+
