@@ -37,6 +37,10 @@ Terug naar de gewone public package van delft3dfmpy?
 ```
 conda remove --all --prefix "d:\GITHUB\DELFT3DFMPY_SB\"
 ```
+of van je oude conda install:
+```
+conda remove --all --prefix "C:\Users\Siebe\anaconda3\envs\delft3dfmpy"
+```
 1.  Installeer de reguliere delft3dfmpy weer met conda install
 
 ```
