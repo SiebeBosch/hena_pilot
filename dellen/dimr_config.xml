@@ -9,7 +9,7 @@
   <control>
     <parallel>
       <startGroup>
-        <time>0 600 1728000</time>
+        <time>0 600 2160000</time>
         <coupler name="flowfm_to_rtc" />
         <start name="Real-Time Control" />
         <coupler name="rtc_to_flowfm" />
