@@ -4,25 +4,26 @@ Pilotproject van Waterschap Hunze &amp; Aa's binnen TKI3
 Welkom bij de pilot Hunze en Aa's, waarin we een D-Hydro-model bouwen voor het stroomgebied De Dellen.
 
 Volg deze stappen	:
-1. Download de broncode (groene button [Code]) van dit script en plaats die in een map op de eigen computer
-1. Zorg voor een D-HyDAMO-omgeving: https://github.com/openearth/delft3dfmpy#installation. 
+1. Installeer Anaconda (python IDE).
+2. Download de broncode (groene button [Code]) van dit script en plaats die in een map op de eigen computer
+3. Zorg voor een D-HyDAMO-omgeving: https://github.com/openearth/delft3dfmpy#installation. 
 In het kort: draai vanuit de Anaconda Prompt deze code vanuit de map waar de environment.yml staat:
 ```
 conda env create -f environment.yml
 ```
-3. Activeer de delft3dfmpy omgeving via de Anaconda Prompt (niet te verwarren met de reguliere command-prompt van Windows!):
+4. Activeer de delft3dfmpy omgeving via de Anaconda Prompt (niet te verwarren met de reguliere command-prompt van Windows!):
 ```
 conda activate delft3dfmpy
 ```
-4. Installeer delft3dfmpy in deze omgeving
+5. Installeer delft3dfmpy in deze omgeving
 ```
 python -m pip install delft3dfmpy
 ```
-5. Open Jupyter Notebook via command-prompt in de geactiveerder omgeving:
+6. Open Jupyter Notebook via command-prompt in de geactiveerder omgeving:
 ```
 jupyter notebook
 ```
-6. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en voer alle code in het notebook uit
+7. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en voer alle code in het notebook uit
 
 
 ### Delft3dfmpy debuggen:
