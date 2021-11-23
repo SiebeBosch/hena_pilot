@@ -25,6 +25,20 @@ jupyter notebook
 ```
 7. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en voer alle code in het notebook uit
 
+### Workflow:
+
+Onderstaand diagram toont de beoogde en uiteindelijk geïmplementeerde werkwijze. 
+
+![image](https://user-images.githubusercontent.com/9431285/143056291-d84bbff6-b992-475e-a09c-a8997f05a2b4.png)
+
+Uit het beheerregister halen we de voor het projectgebied relevante brongegevens. Deze worden geëxporteerd naar shapefiles. Zaken als trapeziumprofielen (voor watergangen waarvoor geen ingemeten profiel beschikbaar is) alsmede tijdreeksen slaan we op in een Excel-document.
+
+Het bestaande programma Channel Builder (Hydroconsult; geen onderdeel van dit script) wordt gebruikt om de brongegevens te valideren en waar nodig te corrigeren. De modelbouwscripts lezen de brongegevens en het Excel-document uit en verwerken dit tot een werkende modelschematisatie in D-Hydro.
+
+De bouw van de 1D FM- en -RTC componenten wordt uitgevoerd door een drietal modelbouwscripts: In een Jupyter Notebook configureren we de bronbestanden, gegevensvelden en eventuele uitzonderlijkheden. Het Jupyter Notebook roept functies aan uit het python-script HydroTools (D2Hydro) en functies uit het Delft3Dfmpy-script van Deltares. 
+
+De bouw van de RR-component voeren we uit met het bestaande programma Catchment Builder (Hydroconsult; geen onderdeel van dit script).
+
 
 ### Delft3dfmpy debuggen (optioneel):
 
