@@ -4,7 +4,7 @@ Pilotproject van Waterschap Hunze &amp; Aa's binnen TKI3
 Welkom bij de pilot Hunze en Aa's, waarin we een D-Hydro-model bouwen voor het stroomgebied De Dellen.
 
 Volg deze stappen	:
-1. Installeer Anaconda (python IDE).
+1. Installeer Anaconda (python IDE): https://www.anaconda.com/products/individual.
 2. Download de broncode (groene button [Code]) van dit script en plaats die in een map op de eigen computer
 3. Zorg voor een D-HyDAMO-omgeving: https://github.com/openearth/delft3dfmpy#installation. 
 In het kort: draai vanuit de Anaconda Prompt deze code vanuit de map waar de environment.yml staat:
