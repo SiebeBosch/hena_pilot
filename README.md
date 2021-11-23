@@ -26,13 +26,14 @@ jupyter notebook
 7. Selecteer modelbouw.ipynb vanuit Jupyter Notebook en voer alle code in het notebook uit
 
 
-### Delft3dfmpy debuggen:
+### Delft3dfmpy debuggen (optioneel):
 
 1. Creëer een fork van delft3dfmpy en synchroniseer deze met je harde schijf
 1. Creëer een werkende delft3dfmpy-omgeving en de-installeer delft3dfmpy (conda deactivate delft3dfmpy)
 1. verwijs in het jupyter notebook naar de locatie van delft3dfmpy Zie daarin onderstaand onder Controle Bestanden de regel sys.path.append(r'....\DELFT3DFMPY_SB')
 
-Let op: ten behoeve van dit project heb ik enkele zaken in Delft3dfmpy aangepast die nog niet gecommit zijn:
+Gedurende het project heb ik gewerkt met een lokale fork van Delft3dfmpy waarin ik enkele kleine bugs had opgelost. 
+Inmiddels zijn deze bugs ook opgelost in de publieke repository:
 1. Parameter bedlevel voor bruggen is vervangen door shift. Dit zat nog niet in delft3dfmpy verwerkt
 2. Wegschrijven structure.ini: versienummer opgehoogd van 2.0 naar 3.0 (opmerking Geert Prinsen aangaande het niet draaien via de DIMR onder D-Hydro 1.10) 
   Daarom is het voor nu raadzaam om met een lokale versie van delft3dfmpy te werken
