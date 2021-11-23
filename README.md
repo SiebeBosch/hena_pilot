@@ -1,5 +1,5 @@
 # TKI3: Pilot Hunze & Aa's
-Pilotproject van Waterschap Hunze &amp; Aa's binnen TKI3
+Pilotproject van Waterschap Hunze &amp; Aa's binnen TKI3: Watersysteemanalyses met D-Hydro. https://tkideltatechnologie.nl/project/del115-11204929-watersysteemanalyses-met-d-hydro/
 
 Welkom bij de pilot Hunze en Aa's, waarin we een D-Hydro-model bouwen voor het stroomgebied De Dellen.
 
