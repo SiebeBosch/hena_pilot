@@ -31,9 +31,6 @@ Zodra het model gereed is, staat hij in de map 'dellen'. Het model kan in D-Hydr
 
 U kunt het model ook eenvoudig draaien buiten de gebruikersinterface van D-Hydro om, door middel van de zogeheten DIMR. Verwijs hiertoe in het bestand run.bat naar de juiste locatie van het bestand run_dimr.bat in uw D-Hydro installatie. Doorgaans volstaat het aanpassen van het D-Hydro versienummer in de string "c:\Program Files\Deltares\D-HYDRO Suite 1D2D (1.0.0.53506)\plugins\DeltaShell.Dimr\kernels\x64\dimr\scripts\run_dimr.bat". Zodra dit pad goed is ingesteld kan de DIMR worden uitgevoerd door run.bat dubbel te klikken.
 
-![image](https://user-images.githubusercontent.com/9431285/143058720-d23c4fa9-a480-4588-af05-b28c42f3eac7.png)
-
-
 ### Workflow:
 
 Onderstaand diagram toont de beoogde en uiteindelijk geïmplementeerde werkwijze. 
@@ -47,6 +44,13 @@ Het bestaande programma Channel Builder (Hydroconsult; geen onderdeel van dit sc
 De bouw van de 1D FM- en -RTC componenten wordt uitgevoerd door een drietal modelbouwscripts: In een Jupyter Notebook configureren we de bronbestanden, gegevensvelden en eventuele uitzonderlijkheden. Het Jupyter Notebook roept functies aan uit het python-script HydroTools (D2Hydro) en functies uit het Delft3Dfmpy-script van Deltares. 
 
 De bouw van de RR-component voeren we uit met het bestaande programma Catchment Builder (Hydroconsult; geen onderdeel van dit script).
+
+### Resultaat:
+
+De hierboven geschetste workflow resulteert in een werkend D-Hydro model van het stroomgebied De Dellen, bestaande uit de componenten RR, FM en RTC.
+
+![image](https://user-images.githubusercontent.com/9431285/143059481-9b2674a6-949f-4ecd-9851-ea20bc8fbbb6.png)
+
 
 
 ### Delft3dfmpy debuggen (optioneel):
